@@ -19,8 +19,50 @@
 </div>
 <span>Olha um segundo span</span>
 <script> 
+
+//alenia b)
 const  p2= document.getElementById("p2");
-console.log(p2);
+//console.log(p2);
+
+//alinea c)
+const  ps= document.getElementsByTagName("p");
+for(const p of ps){
+    //console.log(p);
+}
+//alinea d)
+const psContent = document.getElementsByTagName("p") 
+for(const p of psContents){
+   // console.log(p.innerHTML)
+}
+
+//alinea e)
+const elemsRed = document.getElementsByClassName("Red");
+for(const elm of elemsRed){
+    //console.log(elm)
+}
+
+
+//alinea f)
+const pp3 = document.querySelector("p#p3");
+//console.log(pp3);
+
+//aline g)
+const pDivs = document.querySelectorAll("p, div")
+for ( const elm of pDivs){
+    //console.log(elm.innerHTML)
+}
+
+// h)
+
+const spans = document.querySelectorAll("span");
+for (const elm of spans){
+   // console.log(elm.innerHTML)
+}
+ //i)
+ //j) 
+const spanOutDiv = document.querySelector("body>span")
+console.log(spanOutDiv.innerHTML)
+
 </script>
 </body>
 </html>
