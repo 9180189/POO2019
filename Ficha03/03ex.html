@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <table>
+                <tr>
+                <th>escola</th>
+                <th>local</th>
+                </tr>
+                <tr>
+                <td>ESMAD</td>
+                <td>Vila do Conde</td>
+                </tr>
+                </table>
+
+                <script>
+                    //a
+                const table = document.createElement("table")
+                const tr1 = document.createElement("tr")
+                const tr2 = document.createElement("tr")
+                const th1 = document.createElement("th")
+                const th2 = document.createElement("th")
+                const td2 = document.createElement("td")
+                const td2 = document.createElement("td")
+                const tx1 = document.createElement("Escola")  
+                const tx2 = document.createElement("Local")
+                const tx3 = document.createElement("Esmad")
+                const tx4 = document.createElement("Vila do Conde")
+                th1.appendChild(tx1)
+                th2.appendChild(tx2)
+                th3.appendChild(tx3)
+                th4.appendChild(tx4)
+
+                tr1.appendChild(th1)
+                tr1.appendChild(th2)
+
+                tr2.appendChild(td1)
+                tr2.appendChild(td2)
+
+                table.appendChild(tr1)
+                table.appendChild(tr2)
+
+                document.body.appendChild(table)
+                
+                //b)
+                document.body.innerHTML += `<table>
+                <table>
+                    <tr>
+                        <th>Escola</th>
+                        <th>Local</th>
+
+                    </tr>
+                    <tr>
+                        <td>Escola</td>
+                        <td>Local</td>
+
+                    </tr>
+
+
+                    </table>`
+                </script>
+</body>
+</html>
