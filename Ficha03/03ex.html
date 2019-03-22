@@ -48,22 +48,36 @@
                 document.body.appendChild(table)
                 
                 //b)
-                document.body.innerHTML += '<table>
-                <table>
-                    <tr>
-                        <th>Escola</th>
-                        <th>Local</th>
-
-                    </tr>
-                    <tr>
-                        <td>Escola</td>
-                        <td>Local</td>
-                    </tr>
-                    '</table>
+                function addNewObject() {
+            const name = prompt("Nome:")
+            const grade = +prompt("Nota:")
+            const newObj = {
+                name: name,
+                grade: grade
+            }
+            // alternativa: const newObj = {name, grade}
+            grades[grades.length] = newObj
+            //alternativa: grades.push(newObj)
+            console.table(grades)
 //c
-/*const table = document.querySelector("table")
-table.innerHtml += <tr><td>
-            */
+function calcGradesAverage() {
+            let sum = 0
+            for (const obj of grades) {
+                sum += obj.grade
+            }
+            console.log(sum / grades.length)
+        }
+       //d
+
+       function showNamesPositiveGrades(){
+
+           for(const obj of grades){
+               if (obj.grade >= 10){
+                  name =
+               }
+           }
+       }
+
                 </script>
 </body>
 </html>
