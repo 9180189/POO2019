@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Videoteca</title>
+</head>
+<body>
+    <h1>Videoteca</h1>
+        <form id = "txtFilme">
+                <label for = "txtFilmeName">Título do Filme</label>
+                <input id = "txtFilmeName" type ="text" size="20">
+                <br>
+                <label for = "txtFilmeYear">Ano</label>
+                <input id = "txtFilmeYear" type ="number" min="1990" max="currentYear">
+                <br>
+                <label for = "txtFilmeGenre">Género:</label>
+                <select>
+                    <option value="acao">Ação</option>
+                    <option value="comedia">Comédia</option>
+                    <option value="aventura">Aventura</option>
+                    <option value="terror">terror</option>
+                    <option value="romance">Romance</option>
+                    <option value="thriller">Thriller</option>
+                    <option value="outro">Outro</option>
+                </select>
+                <br>
+                <label for = "txtFilmeCover">Capa</label>
+                <input id = "txtFilmeCover" type ="link">
+                <br>
+                <label for = "txtFilmeTrailer">Trailer</label>
+                <input id = "txtFilmeTrailer" type ="link">
+                <br>
+                <!--Botões-->
+                <input type="submit" value="ADICIONAR">
+                <input type="reset" value="REPOR">
+                <br>
+                
+            </form>
+
+            <hr>
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Ano</th>
+            <th>Género</th>
+            <th>Capa</th>
+            <th>Trailer</th>
+        </tr>
+    </table>
+            <script> src = "ex07.js"</script>
+</body>
+</html>
