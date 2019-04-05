@@ -35,16 +35,14 @@ const car1 = new Car('Ford', '91-GH-15', 'verde', 40, 'Gasóleo')
 const car2 = new Car('Opel', '23-AB-23', 'branco', 50, 'Gasolina')
 const car3 = new Car ('Nissan', '12-CX-45', 'preto', 22, 'Gasóleo')
 
-console.log(car1.color)
-Car1.updateCarColor('rosa')
-console.log(car1.color)
+
 
 //adicionar os 3 objetos a um array
 const cars =[]
 cars.push(car1, car2, car3)
 
 console.log(getCarNumberByBrand('Ford'))
-
+console.log(getCarDepositByFuelType('Gásoleo'))
 function getCarNumberByBrand(brand){
     let cont = 0
 for (const car of cars) {
@@ -54,4 +52,15 @@ for (const car of cars) {
     
     }
 return cont
+}
+
+function getCarDepositByFuelType(fuelType){
+let sum = 0
+for (const car of cars) {
+    if(car.fuelType === fuelType){
+        sum = sum + car.deposit
+    }
+   return sum 
+}
+
 }
