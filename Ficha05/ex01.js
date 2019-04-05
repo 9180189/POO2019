@@ -1,56 +1,68 @@
 //a
-class Retangle{
-
-    constructor(height = 1, width= 2){
+class Rectangle {
+    constructor(width = 2, height = 1) {
+        this.width = width
         this.height = height
-        this.width = width  
-        this._color = "#FFFFFF"  
-        }
-
-        get height(){
-            return this._height
-
-        }
-        get width(){
-            return this._width
-        }
-
-        set height(value){
-            this._height = value
-        }
-        set width(value){
-            this._width = value
-        }
-
-        get color(){
-            this._color 
-        }
-     
-
-        getArea() {
-            return this._width * this._height
-        }
-
- 
-        getPerimeter() {
-            return 2 * this._width + 2 * this._height
-        }
-        
+        this._color = "#FFFFFF"
     }
-   
 
-    const newRectangle = new Retangle(10, 5)
-    const newRectangle2 = new newRectangle()
-    
+    // Propriedade width
+    get width() {
+        return this._width
+    }
 
-    console.log(newRectangle.width)
-    console.log(newRectangle.height)
-    console.log(newRectangle.color)
-   console.log( newRectangle.getArea())
-   console.log(newRectangle.getPerimeter())
+    set width(value) {
+        this._width = value
+    }
 
-   console.log(newRectangle2.width)
-   console.log(newRectangle2.height)
-   console.log(newRectangle2.color)
-   console.log(newRectangle2.getArea())
-   console.log(newRectangle2.getPerimeter())
+    // Propriedade height
+    get height() {
+        return this._height
+    }
+
+    set height(value) {
+        this._height = value
+    }
+
+    // Propriedade color
+    get color() {
+        return this._color
+    }
+
+    /**
+     * @returns Retorna a área de um objeto retângulo
+     */
+    getArea() {
+        return this._width * this._height
+    }
+
+    /**
+     * @returns Retorna o perímetro de um objeto retângulo
+     * 
+     */
+    getPerimeter() {
+        return this._height * 2 + this._width * 2
+    }
+
+}
+
+
+
+
+// Criar um objeto Rectangle
+const newRectangle = new Rectangle(10, 5)
+const newRectangle2 = new Rectangle()
+
+// Imprimir propriedades e métodos para o objeto
+console.log(newRectangle.width)
+console.log(newRectangle.height)
+console.log(newRectangle.color)
+console.log(newRectangle.getArea())
+console.log(newRectangle.getPerimeter())
+
+// Imprimir propriedades e métodos para o objeto
+console.log(newRectangle2.width)
+console.log(newRectangle2.height)
+console.log(newRectangle2.color)
+console.log(newRectangle2.getArea())
+console.log(newRectangle2.getPerimeter())
